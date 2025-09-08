@@ -1,0 +1,22 @@
+<svg width="600" height="300" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="300" fill="#F9A8D4"/>
+  
+  <!-- Food Label -->
+  <rect x="150" y="50" width="300" height="200" rx="10" fill="white" stroke="#666" stroke-width="2"/>
+  
+  <!-- Label Title -->
+  <text x="300" y="80" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#000">Nutrition Facts</text>
+  
+  <!-- Horizontal Line -->
+  <line x1="170" y1="90" x2="430" y2="90" stroke="#000" stroke-width="2"/>
+  
+  <!-- Nutrition Content -->
+  <text x="180" y="120" font-family="Arial" font-size="16" fill="#000">Cholesterol 20mg</text>
+  <text x="180" y="150" font-family="Arial" font-size="16" font-weight="bold" fill="#000">Sodium 150mg</text>
+  <text x="180" y="180" font-family="Arial" font-size="16" fill="#000">Total Carbohydrate 25g</text>
+  
+  <!-- Play Button -->
+  <circle cx="300" cy="150" r="40" fill="#DB2777" fill-opacity="0.7"/>
+  <polygon points="290,130 290,170 320,150" fill="white"/>
+</svg>

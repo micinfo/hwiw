@@ -1,0 +1,27 @@
+<svg width="600" height="300" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="300" fill="#F9A8D4"/>
+  
+  <!-- Blood Pressure Monitor -->
+  <rect x="200" y="70" width="200" height="120" rx="10" fill="white" stroke="#666" stroke-width="3"/>
+  
+  <!-- Monitor Screen -->
+  <rect x="220" y="90" width="160" height="60" fill="#111" stroke="#444" stroke-width="2"/>
+  
+  <!-- Blood Pressure Reading -->
+  <text x="300" y="120" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#00FF00">120/80</text>
+  <text x="300" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#00FF00">mmHg</text>
+  
+  <!-- Monitor Buttons -->
+  <circle cx="250" y="170" r="10" fill="#DB2777"/>
+  <circle cx="300" y="170" r="10" fill="#9CA3AF"/>
+  <circle cx="350" y="170" r="10" fill="#9CA3AF"/>
+  
+  <!-- Arm Cuff -->
+  <path d="M400 130 Q450 150 450 200 Q450 250 400 270" stroke="#666" stroke-width="8" fill="none"/>
+  <path d="M400 130 L400 270" stroke="#666" stroke-width="3" fill="none"/>
+  
+  <!-- Play Button -->
+  <circle cx="300" cy="150" r="40" fill="#DB2777" fill-opacity="0.7"/>
+  <polygon points="290,130 290,170 320,150" fill="white"/>
+</svg>

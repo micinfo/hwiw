@@ -1,0 +1,31 @@
+<svg width="600" height="300" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="300" fill="#E9D5FF"/>
+  
+  <!-- Woman lying down -->
+  <rect x="150" y="120" width="300" height="80" rx="20" fill="#F5F5F5" stroke="#666" stroke-width="2"/> <!-- Bed -->
+  
+  <!-- Woman's body -->
+  <circle cx="300" cy="100" r="40" fill="#FFDDD2"/> <!-- Head -->
+  <rect x="260" y="140" width="80" height="120" rx="20" fill="#FFDDD2"/> <!-- Body -->
+  
+  <!-- Woman's features -->
+  <circle cx="285" cy="90" r="5" fill="#000"/> <!-- Left eye (closed) -->
+  <circle cx="315" cy="90" r="5" fill="#000"/> <!-- Right eye (closed) -->
+  <path d="M285 90 L290 90" stroke="#000" stroke-width="2"/> <!-- Left eye closed -->
+  <path d="M315 90 L310 90" stroke="#000" stroke-width="2"/> <!-- Right eye closed -->
+  <path d="M290 110 Q300 115 310 110" stroke="#000" stroke-width="2" fill="none"/> <!-- Mouth -->
+  
+  <!-- Thyroid pain indicator -->
+  <path d="M300 150 L300 180" stroke="#7E22CE" stroke-width="4"/> <!-- Neck line -->
+  <ellipse cx="300" cy="165" rx="25" ry="15" fill="#C084FC" fill-opacity="0.5" stroke="#7E22CE" stroke-width="2"/> <!-- Thyroid area -->
+  <path d="M290 165 L310 165" stroke="#7E22CE" stroke-width="2"/> <!-- Pain indicator -->
+  <path d="M300 155 L300 175" stroke="#7E22CE" stroke-width="2"/> <!-- Pain indicator -->
+  
+  <!-- Hot water bottle/heating pad -->
+  <rect x="280" y="190" width="40" height="60" rx="10" fill="#FF6B6B" stroke="#7E22CE" stroke-width="2"/>
+  
+  <!-- Play Button -->
+  <circle cx="300" cy="150" r="40" fill="#7E22CE" fill-opacity="0.7"/>
+  <polygon points="290,130 290,170 320,150" fill="white"/>
+</svg>
