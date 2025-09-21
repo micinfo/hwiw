@@ -12,11 +12,11 @@ export default function AboutPage() {
           <div className="md:w-1/3 mb-8 md:mb-0">
             <div className="rounded-full overflow-hidden">
               <Image 
-                src="/meeting.svg" 
+                src="/meeting.png" 
                 alt="Women in a meeting" 
                 width={400} 
                 height={400} 
-                className="rounded-full"
+                className="rounded-tl-[250px] rounded-tr-[310px] rounded-br-[400px] rounded-bl-[450px] mx-auto"
               />
             </div>
           </div>

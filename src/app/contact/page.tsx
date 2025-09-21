@@ -1,6 +1,46 @@
+'use client';
+
 import Image from "next/image";
+import { useState } from 'react';
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    email: '',
+    name: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbzVYz3D8gZhXD6ebE2f7lKUoSsCZQeeXAfVkWCGxZVR_0znrw1INxbOcpK-FlKJgsBPCg/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain',
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      if (data.success) {
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' }); // Clear form
+      } else {
+        alert('Error sending message.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred.');
+    }
+  };
+
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-amber-100 to-pink-100">
       {/* Pink curved shape at the top */}
@@ -8,8 +48,6 @@ export default function ContactPage() {
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-120 mx-auto grid grid-cols-1 gap-8 items-center">
-
-          {/* Right side - Contact Form */}
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
             <h1 className="text-4xl md:text-5xl font-bold text-purple-800 mb-8 text-center">Connect with us!</h1>
             
@@ -27,26 +65,38 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <form className="space-y-4">
+            <form className="space-y-4 text-black" onSubmit={handleSubmit}>
               <div>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Email"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white/50 backdrop-blur-sm"
+                  required
                 />
               </div>
               <div>
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Name"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white/50 backdrop-blur-sm"
+                  required
                 />
               </div>
               <div>
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Message"
                   rows={6}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white/50 backdrop-blur-sm resize-none"
+                  required
                 ></textarea>
               </div>
               <button

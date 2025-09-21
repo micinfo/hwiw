@@ -9,11 +9,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <Image 
-                src="/doctor.svg" 
+                src="/doctor.png" 
                 alt="Doctor with clipboard" 
                 width={400} 
                 height={400} 
-                className="rounded-full"
+                className="rounded-tl-[450px] rounded-tr-[310px] rounded-br-[300px] rounded-bl-[350px] mx-auto"
                 priority
               />
             </div>

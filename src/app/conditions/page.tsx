@@ -5,9 +5,9 @@ export default function ConditionsPage() {
   return (
     <section className="relative min-h-screen bg-amber-100 pb-12">
       {/* Pink curved shape at the top */}
-      <div className="absolute top-0 left-0 right-0 h-96 bg-pink-500 rounded-b-[50%] -z-10"></div>
+      <div className="absolute top-[-100px] left-0 right-0 h-96 bg-pink-500 rounded-b-[50%] z-1"></div>
       
-      <div className="container mx-auto px-4 pt-16 pb-24">
+      <div className="relative container mx-auto px-4 pt-16 pb-24 z-2">
         <h1 className="text-5xl font-bold text-white text-center mb-16">Conditions</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">

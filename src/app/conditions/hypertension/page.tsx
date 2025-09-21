@@ -14,7 +14,7 @@ export default function HypertensionPage() {
           {/* Doctor Image - Left Side */}
           <div className="relative rounded-full overflow-hidden w-full h-[400px] md:h-[500px]">
             <Image 
-              src="/doctor.png" 
+              src="/hypertension.png" 
               alt="Doctor checking blood pressure" 
               fill
               style={{ objectFit: 'cover' }}
@@ -29,7 +29,7 @@ export default function HypertensionPage() {
             <div className="relative">
               <div className="text-4xl text-pink-500 absolute -left-6 top-0">❝</div>
               <p className="text-lg text-purple-900 mb-4 pl-4">
-                Hypertension, or high blood pressure, is often called the 'silent killer' because it usually has no
+                Hypertension, or high blood pressure, is often called the &lsquo;silent killer&rsquo; because it usually has no
                 symptoms but can lead to serious health problems like heart disease and stroke if left untreated.
               </p>
               <div className="text-4xl text-pink-500 absolute right-0 bottom-0">❞</div>
@@ -60,7 +60,7 @@ export default function HypertensionPage() {
         </div>
         
         {/* Content Sections */}
-        <div className="space-y-16">
+        <div className="space-y-16 text-black">
           {/* What You Need to Know Section */}
           <section id="what-you-need-to-know" className="bg-white rounded-3xl p-8 shadow-lg">
             <h2 className="text-3xl font-bold text-purple-800 mb-6">What You Need to Know</h2>

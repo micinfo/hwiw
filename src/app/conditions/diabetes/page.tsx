@@ -14,7 +14,7 @@ export default function DiabetesPage() {
           {/* Doctor Image - Left Side */}
           <div className="relative rounded-full overflow-hidden w-full h-[400px] md:h-[500px]">
             <Image 
-              src="/doctor.png" 
+              src="/diabetes.png" 
               alt="Doctor with patient" 
               fill
               style={{ objectFit: 'cover' }}
@@ -60,7 +60,7 @@ export default function DiabetesPage() {
         </div>
         
         {/* Content Sections */}
-        <div className="space-y-16">
+        <div className="space-y-16 text-black">
           {/* What You Need to Know Section */}
           <section id="what-you-need-to-know" className="bg-white rounded-3xl p-8 shadow-lg">
             <h2 className="text-3xl font-bold text-teal-700 mb-6">What You Need to Know</h2>
