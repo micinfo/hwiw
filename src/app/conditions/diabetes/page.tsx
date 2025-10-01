@@ -29,7 +29,7 @@ export default function DiabetesPage() {
             <div className="relative">
               <div className="text-4xl text-cyan-500 absolute -left-6 top-0">❝</div>
               <p className="text-lg text-teal-800 mb-4 pl-4">
-                Women with diabetes have a higher risk of heart disease than men. They're also more likely to have poor blood glucose control, 
+                Women with diabetes have a higher risk of heart disease than men. They&apos;re also more likely to have poor blood glucose control, 
                 obesity, high blood pressure, and unhealthy cholesterol levels, which can all contribute to heart disease.
               </p>
               <div className="text-4xl text-cyan-500 absolute right-0 bottom-0">❞</div>
@@ -129,7 +129,7 @@ export default function DiabetesPage() {
                 <li>Managing stress through relaxation techniques</li>
               </ul>
               <p className="text-lg">
-                For women planning pregnancy, it's especially important to work closely with healthcare providers to manage diabetes before and during pregnancy.
+                For women planning pregnancy, it&apos;s especially important to work closely with healthcare providers to manage diabetes before and during pregnancy.
               </p>
             </div>
           </section>

@@ -24,8 +24,8 @@ export default function AboutPage() {
             <h1 className="text-4xl font-bold text-purple-700 mb-6">About us</h1>
             <div className="space-y-4">
               <p className="text-purple-700">
-                <span className="font-bold">She Matters</span> was created with one clear purpose: to put women's health at the 
-                forefront. Our initiative recognizes the urgent need to prioritize and protect women's 
+                <span className="font-bold">She Matters</span> was created with one clear purpose: to put women&apos;s health at the 
+                forefront. Our initiative recognizes the urgent need to prioritize and protect women&apos;s 
                 cardiovascular and reproductive health across every stage of life.
               </p>
               <p className="text-purple-700">
@@ -44,7 +44,7 @@ export default function AboutPage() {
                 <li>Improve long-term health outcomes for women</li>
               </ul>
               <p className="text-purple-700 mt-4">
-                Together, we can build a future where every woman's health truly matters.
+                Together, we can build a future where every woman&apos;s health truly matters.
               </p>
               <div className="pt-4">
                 <Link href="/contact" className="inline-block bg-purple-700 text-white px-6 py-3 rounded-full hover:bg-purple-800 transition-colors">
